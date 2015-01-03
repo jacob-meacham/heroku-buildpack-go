@@ -35,6 +35,8 @@ urlfor() {
     esac
 }
 
+source $bp_dir/bin/node-compile
+
 mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
 cache=$(cd "$2/" && pwd)
