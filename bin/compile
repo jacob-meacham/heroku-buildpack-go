@@ -35,6 +35,7 @@ urlfor() {
     esac
 }
 
+bp_dir=$(cd $(dirname $0); cd ..; pwd)
 source $bp_dir/bin/node-compile
 
 mkdir -p "$1" "$2"
